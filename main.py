@@ -7,6 +7,8 @@ print('testando')
 
 
 c1 = Cliente('joao', '9121922')
-conta = Conta(c1.nome ,7777 , 0)
+conta = Conta(c1.get_nome ,7777 , 0)
 
-print(f'{conta.titular} numero: {conta.numero} saldo: {conta.saldo}' )
+conta.deposita(100)
+conta.saque(50)
+conta.extrato()
